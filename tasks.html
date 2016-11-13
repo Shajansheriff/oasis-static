@@ -1,0 +1,269 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Oasis India</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" type="text/css" href="css/material-modal.min.css">
+    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-deep_orange.min.css" /> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="oasis-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="oasis-title mdl-layout-title">
+            <img class="oasis-logo-image" src="images/oasis-logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="oasis-header-spacer mdl-layout-spacer"></div>
+          <div class="oasis-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="oasis-navigation-container">
+            <nav class="oasis-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="staffs.html">Staffs</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="tasks.html">Tasks</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Login</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Register</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="oasis-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="oasis-logo-image" src="images/oasis-logo.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="staffs.html">Staff</a>
+          <a class="mdl-navigation__link" href="tasks.html">Tasks</a>
+          <div class="oasis-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="">Login</a>
+          <a class="mdl-navigation__link" href="">Register</a>
+        </nav>
+      </div>
+
+      <div class="oasis-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="oasis-be-together-section">
+          <br>
+          <div class="md-cell mdl-cell--11-col list-task-head-container">
+            <h4 class="list-task-heading">List of Tasks</h4>
+          </div>
+          <div class="mdl-grid">
+
+            <div class="create-task mdl-cell mdl-cell--3-col mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <h4>
+                  Click to<br>
+                  Create New<br>
+                  Task
+                </h4>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button  mdl-js-button mdl-js-ripple-effect modal__trigger" data-modal="#modal">
+                  Add Task
+                </a>
+                <div class="mdl-layout-spacer"></div>
+                <!-- <i class="material-icons">event</i> -->
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp portfolio-card">
+              <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Task One</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                <ul class="mdl-list">
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon error-color" style="margin-right: 8px;">face</i> Unassigned </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon info-color" style="margin-right: 8px;">date_range</i> 12/11/2016 </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon success-color" style="margin-right: 8px;">done_all</i> Completed</span></li>
+                  <p>
+                  </p>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html" data-upgraded=",MaterialButton,MaterialRipple">Expand<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp portfolio-card">
+              <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Task One</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                <ul class="mdl-list">
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon error-color" style="margin-right: 8px;">face</i> Unassigned </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon info-color" style="margin-right: 8px;">date_range</i> 12/11/2016 </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon success-color" style="margin-right: 8px;">done_all</i> Completed</span></li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html" data-upgraded=",MaterialButton,MaterialRipple">Expand<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp portfolio-card">
+              <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Task One</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                <ul class="mdl-list">
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon error-color" style="margin-right: 8px;">face</i> Unassigned </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon info-color" style="margin-right: 8px;">date_range</i> 12/11/2016 </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon success-color" style="margin-right: 8px;">done_all</i> Completed</span></li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html" data-upgraded=",MaterialButton,MaterialRipple">Expand<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp portfolio-card">
+              <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Task One</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                <ul class="mdl-list">
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon error-color" style="margin-right: 8px;">face</i> Unassigned </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon info-color" style="margin-right: 8px;">date_range</i> 12/11/2016 </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon success-color" style="margin-right: 8px;">done_all</i> Completed</span></li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html" data-upgraded=",MaterialButton,MaterialRipple">Expand<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+              </div>
+            </div> 
+            <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp portfolio-card">
+              <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Task One</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                <ul class="mdl-list">
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon error-color" style="margin-right: 8px;">face</i> Unassigned </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon info-color" style="margin-right: 8px;">date_range</i> 12/11/2016 </span></li>
+
+                  <li><span style="display: inline-flex;"><i class="material-icons mdl-list__item-icon success-color" style="margin-right: 8px;">done_all</i> Completed</span></li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html" data-upgraded=",MaterialButton,MaterialRipple">Expand<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+              </div>
+            </div>    
+          </div>
+        </div>
+
+        <!-- <a href="" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored modal__trigger" data-modal="#modal">
+        Launch Modal
+      </a> -->
+      <div id="modal" class="modal modal__bg">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <div class="modal__header">
+              <div class="modal__title">
+                <h2 class="modal__title-text">Modal</h2>
+              </div>
+
+            </div>
+
+
+            <div class="modal__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laboriosam accusantium facere suscipit, alias accusamus corrupti consequatur at porro, voluptates commodi sed omnis voluptatem, ex officiis illum, architecto fugiat id?
+              </p>
+            </div>
+
+            <div class="modal__footer">
+              <a class="mdl-button mdl-button--colored mdl-js-button  modal__close">
+                Close
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer class="oasis-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">
+              <b>Oasis India is part of the Oasis global family © 2016</b>
+            </p>
+            <p class="mdl-typography--font-light">
+              Oasis India is registered under the Karnataka Societies Registration Act 1960 bearing Registration No. S690/94-95.
+            </p>
+            <p class="mdl-typography--font-light">
+              The registered office is located in 23/2 Kumaraswamy Naidu Road, Frazer Town, Bangalore 560 005.
+            </p> 
+            <p>
+               All donations made to Oasis India are tax exempt under 80G.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script type="text/javascript" src="js/material-modal.min.js"></script>
+  </body>
+</html>
